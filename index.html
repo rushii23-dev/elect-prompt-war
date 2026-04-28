@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your simple, non-partisan guide to participating in democracy. Accurate, unbiased information at your fingertips." />
+  <title>Your Vote, Your Voice | Non-Partisan Voter Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <span>Your Vote, Your Voice</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#journey" class="nav-link">Registration</a></li>
+        <li><a href="#election-map" class="nav-link">Election Map</a></li>
+      </ul>
+      <button class="nav-cta" id="get-started-btn">Check Registration</button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero page-section animate-section" id="home">
+    <div class="hero-content-wrapper">
+      <div class="hero-content">
+        <h1 class="hero-title">Your Vote, Your Voice</h1>
+        <p class="hero-subtitle">Your simple, non-partisan guide to participating in democracy. Accurate, unbiased information at your fingertips.</p>
+        <form class="hero-search" id="pin-form">
+          <label for="pin-code" class="visually-hidden">Indian PIN Code</label>
+          <span class="material-icons hero-search-icon" aria-hidden="true">location_on</span>
+          <input id="pin-code" name="pin" type="text" inputmode="numeric" maxlength="6" placeholder="Enter Indian PIN code to see election date" />
+          <button type="submit" class="hero-search-btn">Search</button>
+        </form>
+        <p class="hero-search-result" id="pin-result" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOURNEY STEPS ========== -->
+  <section class="journey section page-section animate-section" id="journey">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Your Journey to the Polls</h2>
+      </div>
+      <div class="journey-grid">
+        <div class="journey-card journey-card-compact" id="registration">
+          <div>
+            <div class="journey-step-badge">1</div>
+            <span class="material-icons journey-compact-icon">how_to_reg</span>
+            <h3>Registration</h3>
+          </div>
+          <ul class="journey-checklist">
+            <li>
+              <button class="journey-action-btn" type="button" data-action="check-status">
+                <span class="material-icons">arrow_forward</span>
+                <span>Check status</span>
+              </button>
+            </li>
+            <li>
+              <button class="journey-action-btn" type="button" data-action="find-deadline">
+                <span class="material-icons">arrow_forward</span>
+                <span>Find deadline</span>
+              </button>
+            </li>
+            <li>
+              <button class="journey-action-btn" type="button" data-action="register-online">
+                <span class="material-icons">arrow_forward</span>
+                <span>Register online</span>
+              </button>
+            </li>
+          </ul>
+          <button class="calendar-corner-btn" id="add-calendar-btn" type="button" title="Add to calendar">
+            <span class="material-icons" aria-hidden="true">calendar_today</span>
+          </button>
+          <p class="journey-feedback" id="journey-feedback" role="status" aria-live="polite"></p>
+        </div>
+        <div class="journey-card journey-card-compact">
+          <div class="journey-step-badge">2</div>
+          <span class="material-icons journey-compact-icon">school</span>
+          <h3>Education</h3>
+          <p>Learn about ballot measures and candidate platforms.</p>
+          <button class="journey-action-btn journey-compact-btn" type="button" data-action="learn-candidates">
+            <span class="material-icons check-done">open_in_new</span>
+            <span>View candidate affidavits</span>
+          </button>
+        </div>
+        <div class="journey-card journey-card-compact">
+          <div class="journey-step-badge">3</div>
+          <span class="material-icons journey-compact-icon">ballot</span>
+          <h3>The Vote</h3>
+          <p>Find your polling place or request a mail-in ballot.</p>
+          <button class="journey-action-btn journey-compact-btn" type="button" data-action="find-polling-booth">
+            <span class="material-icons check-done">open_in_new</span>
+            <span>Find polling booth</span>
+          </button>
+        </div>
+        <div class="journey-card journey-card-compact">
+          <div class="journey-step-badge">4</div>
+          <span class="material-icons journey-compact-icon">campaign</span>
+          <h3>After Polls</h3>
+          <p>Stay engaged and track the results in real-time.</p>
+          <button class="journey-action-btn journey-compact-btn" type="button" data-action="track-results">
+            <span class="material-icons check-done">open_in_new</span>
+            <span>Track live results</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section election-map page-section animate-section" id="election-map">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">India Election Navigator</h2>
+        <p class="section-subtitle">Choose your state, then your city, and instantly view local election offices, deadlines, and polling resources.</p>
+      </div>
+      <div class="election-map-shell">
+        <div class="election-control-panel">
+          <div class="control-topline">
+            <span class="material-icons">travel_explore</span>
+            <p>Smart locality election finder</p>
+          </div>
+          <div class="election-controls">
+            <div class="control-field">
+              <label for="state-select">Step 1: Select State</label>
+              <select id="state-select">
+                <option value="">Choose a state</option>
+              </select>
+            </div>
+            <div class="control-field">
+              <label for="city-select">Step 2: Select City</label>
+              <select id="city-select" disabled>
+                <option value="">Select state first</option>
+              </select>
+            </div>
+            <div class="control-field">
+              <label for="city-filter">Find city faster</label>
+              <input id="city-filter" type="text" placeholder="Type to filter city list..." disabled />
+            </div>
+            <div class="control-field">
+              <label for="area-input">Area / Locality (optional)</label>
+              <input id="area-input" type="text" placeholder="e.g. Andheri West, Salt Lake, Koramangala" />
+            </div>
+          </div>
+          <div class="election-cta-row">
+            <button id="show-election-info-btn" type="button" class="election-primary-btn">Show Election Details</button>
+            <button id="reset-election-btn" type="button" class="election-secondary-btn">Reset</button>
+          </div>
+          <p id="election-map-feedback" class="election-map-feedback" role="status" aria-live="polite"></p>
+        </div>
+
+        <div id="election-results" class="election-results is-empty">
+          <div class="election-results-placeholder">
+            <span class="material-icons">map</span>
+            <h3>Ready when you are</h3>
+            <p>Select your state and city to unlock tailored election info for your locality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VOTER READINESS CHECKLIST ========== -->
+  <section class="checklist-section section page-section animate-section" id="checklist">
+    <div class="container">
+      <div class="checklist-inner">
+        <div class="checklist-header">
+          <h2 class="section-title">Voter Readiness Checklist</h2>
+          <p class="section-subtitle">Complete these simple steps to ensure you're fully prepared for election day.</p>
+        </div>
+        <div class="checklist-grid">
+
+          <div class="checklist-card" onclick="toggleCheck(this)" id="check-1">
+            <div class="check-indicator"><span class="material-icons">check_circle_outline</span></div>
+            <div class="check-content">
+              <h4>Check your registration status</h4>
+              <p>Verify you are correctly registered at your current address.</p>
+            </div>
+          </div>
+
+          <div class="checklist-card" onclick="toggleCheck(this)" id="check-2">
+            <div class="check-indicator"><span class="material-icons">check_circle_outline</span></div>
+            <div class="check-content">
+              <h4>Locate your polling place</h4>
+              <p>Find where to vote or check mail-in drop box locations.</p>
+            </div>
+          </div>
+
+          <div class="checklist-card" onclick="toggleCheck(this)" id="check-3">
+            <div class="check-indicator"><span class="material-icons">check_circle_outline</span></div>
+            <div class="check-content">
+              <h4>Research ballot measures</h4>
+              <p>Review local propositions and candidate platforms beforehand.</p>
+            </div>
+          </div>
+
+          <div class="checklist-card" onclick="toggleCheck(this)" id="check-4">
+            <div class="check-indicator"><span class="material-icons">check_circle_outline</span></div>
+            <div class="check-content">
+              <h4>Prepare your photo ID</h4>
+              <p>Ensure you have the necessary identification required in your state.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="checklist-progress-wrap">
+          <div class="checklist-progress-bar">
+            <div class="checklist-progress-fill" id="checklist-fill" style="width:0%"></div>
+          </div>
+          <span class="checklist-progress-label" id="checklist-label">0 of 4 complete</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">🗳️</span>
+        <span class="footer-brand-name">Your Vote, Your Voice</span>
+        <p class="footer-tagline">© 2024 Your Vote, Your Voice. A neutral source for civic engagement.<br>We do not support or oppose any political candidate or party.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="#">Official Voting Resources</a></li>
+            <li><a href="#">Find Your Poll</a></li>
+            <li><a href="#">Election Deadlines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
