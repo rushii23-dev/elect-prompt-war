@@ -13,6 +13,7 @@
 - **🗺️ India Election Navigator**: A comprehensive state and city selector that provides tailored election administrative office details, statutory timelines, and official resource links.
 - **✅ Voter Readiness Checklist**: An interactive progress-tracked checklist to ensure you have verified your registration, located your polling booth, and prepared your photo ID.
 - **📅 Add to Calendar**: Download a `.ics` reminder for Election Day to ensure you never miss your chance to vote.
+- **🛣️ AI Voter Roadmap**: Generate a personalized 3-step action plan for the 2026–2027 election cycle based on your age, state, and policy interests. Powered by Google Gemini, it provides state-specific logistics, official resources, and PDF export capabilities.
 - **📱 Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing with smooth animations and modern aesthetics.
 - **🤖 AI-Powered Assistant**: Integrated with Google Gemini API for real-time voter assistance and guidance.
 
