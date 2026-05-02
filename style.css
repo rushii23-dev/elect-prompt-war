@@ -1104,3 +1104,268 @@ ul { list-style: none; }
 }
 
 /* AI Assistant styles removed by request */
+
+/* ========== AI Voter Roadmap (React) ========== */
+.voter-roadmap-inner {
+  width: 100%;
+}
+
+.voter-roadmap-inner .section-header {
+  margin-bottom: 48px;
+}
+
+.voter-roadmap-inner .bracket-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4a5f8f;
+  margin-bottom: 10px;
+}
+
+.voter-roadmap-inner .roadmap-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.voter-roadmap-inner .roadmap-chip {
+  border: 1px solid #c4d0ea;
+  background: #fff;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2e3f67;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.voter-roadmap-inner .roadmap-chip:hover {
+  transform: translateY(-1px);
+  border-color: #8fa7e6;
+}
+
+.voter-roadmap-inner .roadmap-chip.is-on {
+  border-color: #3456d1;
+  background: #edf2ff;
+  box-shadow: 0 6px 14px rgba(52, 86, 209, 0.18);
+}
+
+.voter-roadmap-inner .roadmap-under-18 {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px dashed #9eb2e8;
+  background: rgba(255, 255, 255, 0.65);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #2e3f67;
+}
+
+.voter-roadmap-inner .roadmap-under-18 strong {
+  color: #243a7a;
+}
+
+.voter-roadmap-inner .roadmap-profile-snapshot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: #2e3f67;
+  line-height: 1.6;
+}
+
+.voter-roadmap-inner .roadmap-profile-snapshot dl {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d8e1f3;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.voter-roadmap-inner .roadmap-profile-snapshot dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5a6b8c;
+  margin-top: 10px;
+}
+
+.voter-roadmap-inner .roadmap-profile-snapshot dt:first-child {
+  margin-top: 0;
+}
+
+.voter-roadmap-inner .roadmap-profile-snapshot dd {
+  margin: 4px 0 0;
+  font-weight: 600;
+  color: #1d2a41;
+}
+
+.voter-roadmap-inner .roadmap-timeline {
+  position: relative;
+  padding-left: 22px;
+  margin-top: 8px;
+}
+
+.voter-roadmap-inner .roadmap-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, #3456d1, rgba(52, 86, 209, 0.15));
+  border-radius: 2px;
+}
+
+.voter-roadmap-inner .roadmap-step-card {
+  position: relative;
+  border-radius: 14px;
+  border: 1px solid #c7d3ea;
+  background: #fff;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 20px rgba(22, 39, 81, 0.06);
+}
+
+.voter-roadmap-inner .roadmap-step-card:last-child {
+  margin-bottom: 0;
+}
+
+.voter-roadmap-inner .roadmap-step-card::before {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 22px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3456d1;
+  box-shadow: 0 0 0 4px rgba(52, 86, 209, 0.2);
+}
+
+.voter-roadmap-inner .roadmap-step-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.voter-roadmap-inner .roadmap-step-title {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.voter-roadmap-inner .roadmap-deadline {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3456d1;
+  background: #edf2ff;
+  border: 1px solid #c4d0ea;
+  border-radius: 999px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.voter-roadmap-inner .roadmap-step-body {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #3f4a5d;
+}
+
+.voter-roadmap-inner .roadmap-results-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #dbe4ec;
+}
+
+.voter-roadmap-inner .roadmap-footnote {
+  margin-top: 14px;
+  font-size: 0.84rem;
+  color: #52658d;
+  line-height: 1.55;
+}
+
+.voter-roadmap-inner .roadmap-nvsp-callout {
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #b42318;
+  background: linear-gradient(135deg, rgba(254, 226, 226, 0.95), rgba(255, 255, 255, 0.9));
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #1d2a41;
+}
+
+.voter-roadmap-inner .roadmap-nvsp-callout a {
+  color: #7f1d1d;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.voter-roadmap-inner .roadmap-nvsp-callout a:hover {
+  color: #b42318;
+}
+
+.voter-roadmap-inner .roadmap-official-links {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e4eaf7;
+}
+
+.voter-roadmap-inner .roadmap-official-links p {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5a6b8c;
+  margin-bottom: 8px;
+}
+
+.voter-roadmap-inner .roadmap-official-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #243a7a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-word;
+}
+
+.voter-roadmap-inner .roadmap-official-links a:hover {
+  color: #3456d1;
+}
+
+.voter-roadmap-inner .roadmap-official-links .roadmap-link-hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #52658d;
+  line-height: 1.5;
+}
+
+.voter-roadmap-inner .roadmap-profile-snapshot .election-cta-row .election-secondary-btn {
+  min-height: 44px;
+  height: auto;
+  padding: 10px 16px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
