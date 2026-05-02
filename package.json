@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "vite",
-    "dev": "vite"
+    "start": "node server.js",
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
     "cors": "^2.8.5",
