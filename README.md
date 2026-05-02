@@ -14,18 +14,19 @@
 - **✅ Voter Readiness Checklist**: An interactive progress-tracked checklist to ensure you have verified your registration, located your polling booth, and prepared your photo ID.
 - **📅 Add to Calendar**: Download a `.ics` reminder for Election Day to ensure you never miss your chance to vote.
 - **📱 Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing with smooth animations and modern aesthetics.
-- **🤖 AI-Ready Backend**: Includes a Node.js proxy server configured to integrate with OpenAI for real-time voter assistance.
+- **🤖 AI-Powered Assistant**: Integrated with Google Gemini API for real-time voter assistance and guidance.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: HTML5, Vanilla CSS3 (Custom Design System), JavaScript (ES6+).
+- **Frontend**: React.js, Vite, TailwindCSS, HTML5, JavaScript (ES6+).
 - **Backend**: Node.js, Express.js.
 - **APIs Integrated**:
   - [India Post PIN Code API](https://www.postalpincode.in/Api-Details)
   - [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
   - [CountriesNow API](https://countriesnow.space/)
+  - Google Gemini API
 - **Deployment**: Dockerized for Google Cloud Run.
 
 ---
@@ -48,11 +49,11 @@
    npm install
    ```
 
-3. **Run the local server**:
+3. **Run the local development server**:
    ```bash
-   npm start
+   npm run dev
    ```
-   The application will be available at `http://localhost:3000`.
+   The application will be available at `http://localhost:5173`.
 
 ---
 
